@@ -1,11 +1,11 @@
-package aplication;
+package application;
 
 import java.util.Date;
 
-import entites.Order;
+import entities.Order;
 import entities.enums.OrderStatus;
 
-public class Program {
+public class Program001 {
 
 	public static void main(String[] args) {
 		

@@ -1,4 +1,4 @@
-package entites;
+package entities;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -21,7 +21,6 @@ public class Worker {
 	}
 
 	public Worker(String name, WorkerLevel level, Double baseSalary, Department department) {
-		super();
 		this.name = name;
 		this.level = level;
 		this.baseSalary = baseSalary;
