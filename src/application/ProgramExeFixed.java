@@ -13,9 +13,11 @@ import entities.exefixacao.Product;
 
 public class ProgramExeFixed {
 
+	private static Scanner scan;
+
 	public static void main(String[] args) throws ParseException {
 		
-		Scanner scan = new Scanner(System.in);
+		scan = new Scanner(System.in);
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		SimpleDateFormat sdf1 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 		Order o = new Order();

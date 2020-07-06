@@ -6,11 +6,13 @@ import java.util.Scanner;
 import entities.Student;
 
 public class Exe03 {
-
+	
+	public static Scanner scan;
+	
 	public static void main(String[] args) {
 		
 		Locale.setDefault(Locale.US);
-		Scanner scan = new Scanner(System.in);
+		scan = new Scanner(System.in);
 		Student student = new Student();
 		
 		student.name = scan.nextLine();

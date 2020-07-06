@@ -7,10 +7,12 @@ import entities.Estudante;
 
 public class Exe07 {
 
+	public static Scanner scan;
+	
 	public static void main(String[] args) {
 		
 		Locale.setDefault(Locale.US);
-		Scanner scan = new Scanner(System.in);
+		scan = new Scanner(System.in);
 		
 		Estudante[] student = new Estudante[10];
 		int n = 0;
