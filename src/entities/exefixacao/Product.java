@@ -6,7 +6,7 @@ public class Product {
 	private Double price;
 	
 	public Product() {
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public Product(String name, Double price) {

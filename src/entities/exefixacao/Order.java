@@ -79,8 +79,7 @@ public class Order {
 		sb.append(this.client);
 		sb.append("Order Items: \n");
 		for(OrderItem oi : this.items) {
-			System.out.println(oi.getPrice());
-			System.out.println("ELE");
+			sb.append(oi + "\n");
 		}
 		sb.append("Total price: $");
 		sb.append(this.total());

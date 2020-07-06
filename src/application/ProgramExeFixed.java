@@ -17,6 +17,7 @@ public class ProgramExeFixed {
 		
 		Scanner scan = new Scanner(System.in);
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		SimpleDateFormat sdf1 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 		Order o = new Order();
 		
 		System.out.println("Enter cliente data:");
@@ -49,10 +50,11 @@ public class ProgramExeFixed {
 			
 		}
 		o.setClient(cli);
-		String dataAtual = sdf.format(new Date());
-		o.setMoment(sdf.parse(dataAtual));
+		String dataAtual = sdf1.format(new Date());
+		o.setMoment(sdf1.parse(dataAtual));
 		o.setStatus(OrderStatus.valueOf(statusOrder));
 		
+		System.out.println();
 		System.out.println(o);
 	}
 

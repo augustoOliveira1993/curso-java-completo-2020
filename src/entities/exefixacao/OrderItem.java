@@ -45,7 +45,8 @@ public class OrderItem{
 		sb.append(", Quantity: ");
 		sb.append(this.quantity);
 		sb.append(", Subtotal: $");
-		sb.append(this.subTotal() + "\n");
+		sb.append(this.subTotal());
 		return sb.toString();
 	}
 }
+ 
