@@ -36,14 +36,7 @@ public class Exceptionsv2 {
 			System.out.print("Check-out date (dd/MM/yyyy): ");
 			checkOut = sdf.parse(scan.next());
 
-			String error = reservation.updateDates(checkIn, checkOut);
-			if (error != null) {
-				System.out.println("Error in reservation: " + error);
-			} else {
-				System.out.println("Reservation: " + reservation);
-			}
-			
-
+			reservation.updateDates(checkIn, checkOut);
 		}
 
 		scan.close();
