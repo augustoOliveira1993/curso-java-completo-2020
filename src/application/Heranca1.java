@@ -1,7 +1,5 @@
 package application;
 
-import java.sql.Savepoint;
-
 import entities.Account;
 import entities.BusinessAccount;
 import entities.SavingsAccount;
