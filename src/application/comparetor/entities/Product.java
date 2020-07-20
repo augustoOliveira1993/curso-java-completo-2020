@@ -30,8 +30,8 @@ public class Product {
 		p.setPrice(p.getPrice() * 1.1);
 	}
 	
-	public boolean nonStaticProductPredicate() {
-		return this.price >= 100.0;
+	public void nonStaticPriceUpdate() {
+		this.price = price * 1.1;
 	}
 	
 	@Override
