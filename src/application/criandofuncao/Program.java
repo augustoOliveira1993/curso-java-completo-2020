@@ -1,10 +1,10 @@
-package application.function;
+package application.criandofuncao;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import application.comparetor.entities.Product;
+import application.criandofuncao.service.ProductService;
 
 public class Program {
 
@@ -17,9 +17,12 @@ public class Program {
 		list.add(new Product("Tablet", 350.50));
 		list.add(new Product("HD Case", 80.90));
 		
-		List<String> names = list.stream().map(p -> p.getName().toUpperCase()).collect(Collectors.toList());
+		ProductService ps = new ProductService();
 		
-		names.forEach(System.out::println);
+		double sum = ps.filteredSum(list, p -> p.getPrice() < 100.0);
+		
+		System.out.println("Sum: " + String.format("%.2f", sum));
+		
 	}
 
 }
