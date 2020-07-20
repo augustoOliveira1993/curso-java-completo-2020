@@ -17,7 +17,7 @@ public class Program {
 		list.add(new Product("Table", 350.50));
 		list.add(new Product("HD Case", 80.90));
 		
-		list.removeIf(Product::staticProductPredicate);// referencia para metodo
+		list.removeIf(Product::nonStaticProductPredicate);// referencia para metodo
 		
 		for (Product p : list) {
 			System.out.println(p);
