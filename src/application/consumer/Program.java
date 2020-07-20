@@ -2,9 +2,9 @@ package application.consumer;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 
 import application.comparetor.entities.Product;
-import application.consumer.util.PriceUpdate;
 
 public class Program {
 
@@ -17,7 +17,11 @@ public class Program {
 		list.add(new Product("Table", 350.50));
 		list.add(new Product("HD Case", 80.90));
 		
-		list.forEach(Product::nonStaticPriceUpdate);
+		double factor = 1.1;
+		
+		Consumer<Product> cons = p -> p.setPrice(p.getPrice() * factor);
+		
+		list.forEach(cons);
 		
 		list.forEach(System.out::println);
 	}
