@@ -30,8 +30,8 @@ public class Product {
 		return p.getName().toUpperCase();
 	}
 	
-	public void nonStaticPriceUpdate() {
-		this.price = price * 1.1;
+	public String nonStaticUpperCaserName() {
+		return this.name.toUpperCase();
 	}
 	
 	@Override
